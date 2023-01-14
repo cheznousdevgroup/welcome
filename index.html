@@ -4,41 +4,279 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dev Group</title>
+    <title>Acceuil</title>
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-   <h1><i class='bx bxl-dev-to bx-fade-left'>Welcome Geek !</i></h1>
-  <div>
-      <p>Groupe des jeunes developpeurs full stack passionné de l'informatique</p>
-      <i class='bx bxl-typescript bx-tada' ></i>
-      <i class='bx bxl-postgresql bx-flashing' ></i>
-      <i class='bx bxl-java bx-burst' ></i>
-      <i class='bx bxl-php bx-spin' ></i>
-      <i class='bx bxl-javascript bx-fade-left' ></i>
-      <i class='bx bxl-html5 bx-fade-right' ></i>
-      <i class='bx bxl-css3 bx-fade-up' ></i>
-      <i class='bx bxl-python bx-fade-down' ></i>
-      <i class='bx bxl-c-plus-plus bx-flashing' ></i>
-      <i class='bx bxl-nodejs bx-tada' ></i>
-  </div>
+    <input type="checkbox" id="check">
+    <nav>
+        <div class="icon">C. <p> nous <b style="color:rgb(219, 224, 224);">D</b>ev <b style="color:rgb(214, 230, 230);">G</b>roup</p></div>
+        <div>
+                <h1><i class='bx bxl-dev-to bx-fade-left'>Welcome Geek !</i></h1>
+            <div class="description">
+                
+                <p>Nous sommes un Groupe de jeunes developpeurs full stack passionné de l'informatique</p>
+                <i class='bx bxl-postgresql bx-flashing' ></i>
+                <i class='bx bxl-java bx-burst' ></i>
+                <i class='bx bxl-php bx-spin' ></i>
+                <i class='bx bxl-javascript bx-fade-left' ></i>
+                <i class='bx bxl-html5 bx-fade-right' ></i>
+                <i class='bx bxl-css3 bx-fade-up' ></i>
+                <i class='bx bxl-python bx-fade-down' ></i>
+                <i class='bx bxl-c-plus-plus bx-flashing' ></i>
+                <i class='bx bxl-nodejs bx-tada' ></i>
+            </div>
+        </div>
+        
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Docs/formation</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+        </ol>
+        <label for="check" class="bar">
+            <span class="fa fa-bars" id="bars"></span>
+            <span class="fa fa-times" id="times"></span>
+        </label>
+    </nav>
+    <section></section>
+    <p>Bonjour monsieur !</p>
+<footer>
+            <p>Author: C. nous Dev Group</p>
+            <p><a href="mailto:C.nousdevgroup@gmail.com">C.nousdevgroup@gmail.com</a></p>
+</footer> 
+    
 </body>
-    <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: darkslategray;
-}
-h1 {
-    text-align: center;
-    color: white;
-    margin: 15px 30px;
-}
-h1:hover {
-    color: brown;
-}
-</style>
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins' sans-serif;
+    }
+    body {
+        background-color: #032a2a;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 15px 30px;
+    }
+    h1:hover {
+        color: brown;
+    }
+    .description {
+        color:blanchedalmond;
+    }
+    .description i {
+        font-size: 35px;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        background: #010c11;
+        position: relative;
+        justify-content: space-between;
+        text-align: center;
+        padding: 15px 30px;
+    }
+    nav .icon {
+        font-size: 65px;
+        color: #b11858;
+    }
+    nav .icon p{
+        font-size: 10px;
+    }
+    nav ol {
+        display: flex;
+        list-style: none;
+        margin: auto 0;
+    }
+    nav ol li {
+        margin: 0 2px;
+    }
+    nav ol li a {
+        color: #fff;
+        border-radius: 15px;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+    }
+    nav ol li:hover a {
+        background: #fff;
+        color: #0a5071;
+    }
+    nav ol .search_box {
+        display: flex;
+        margin: auto 0;
+        height: 35px;
+        line-height: 35px;
+    }
+    nav ol .search_box input {
+        border: none;
+        outline: none;
+        background: #fff;
+        height: 100%;
+        padding: 0 10px;
+        font-size: 20px;
+        width: 210px;
+    }
+    nav ol .search_box span {
+        color: #0a5071;
+        font-size: 20px;
+        background: #fff;
+        height: 100%;
+        padding: 8px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1;
+    }
+    nav ol  .search_box span:hover {
+        color: #fff;
+    }
+    nav ol .search_box span::after {
+        height: 100%;
+        width: 0;
+        content: '';
+        background: #ff003c;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: 0.3s;
+    }
+    nav ol .search_box span:hover::after {
+        width: 100%;
+    }
+    nav .bar {
+        position: relative;
+        margin: auto;
+        display: none;
+    }
+    nav .bar span {
+        position: absolute;
+        color: #fff;
+        font-size: 35px;
+    }
+    input[type="checkbox"]{
+        -webkit-appearance: none;
+        display: none;
+    
+    }
+    footer {
+      display: block;
+      width: 100%;
+      background: #010c11;
+      position: relative;
+      justify-content: space-between;
+      text-align: center;
+      padding: 15px 30px;
+      margin-top: 100%;
+    }
+    @media screen and (max-width: 1250px) {
+        nav {
+            display: block;
+            padding: 0;
+        }
+        
+        nav .icon {
+            display: inline-block;
+            padding: 15px 30px;
+        }
+    
+        nav ol .search_box {
+            width: 100%;
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    
+        nav ol .search_box input {
+            width: 90px;
+        }
+    
+        nav ol {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            height: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+    
+        nav ol li {
+            text-align: center;
+            transition: 0.3s 0.1s all;
+            opacity: 0;
+        }
+    
+        nav ol li a {
+            color: black;
+            font-size: 28px;
+            padding: 25px;
+            display: block;
+        }
+    
+        nav ol li:nth-child(1) {
+            transform: translateX(-150px)
+        }
+        nav ol li:nth-child(2) {
+            transform: translateX(-200px)
+        }
+        nav ol li:nth-child(3) {
+            transform: translateX(-250px)
+        }
+        nav ol li:nth-child(4) {
+            transform: translateX(-300px)
+        }
+        nav ol li:nth-child(5) {
+            transform: translateX(-350px)
+        }
+    
+        nav .bar {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 80px;
+            cursor: pointer;
+        }
+    
+        nav .bar #times {
+            display: none;
+        }
+    
+        #check:checked ~ nav .bar #times {
+            display: block;
+        }
+    
+        #check:checked ~ nav .bar #bars {
+            display: none;
+        }
+        #check:checked ~ nav ol {
+            visibility: visible;
+            height: 465px;
+        }
+        #check:checked ~ nav ol li:nth-child(1),
+        #check:checked ~ nav ol li:nth-child(2),
+        #check:checked ~ nav ol li:nth-child(3),
+        #check:checked ~ nav ol li:nth-child(4),
+        #check:checked ~ nav ol li:nth-child(5){
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    section {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        top: 0;
+        z-index: -1;
+        filter: brightness(30%);
+    }
+        </style>
 </html>
