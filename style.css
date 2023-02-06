@@ -30,6 +30,13 @@ body {
 	flex-direction: row;
 	justify-content: space-around;
 }
+.cont1 {
+    width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
 /* les textes de bienvenue et de description contenu dans la nav bar  */
 h1 {
@@ -416,6 +423,9 @@ input[type="checkbox"]{
         display: block;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .cont1{
+        display: none;
     }
     .card{
         padding-left: 50px;
