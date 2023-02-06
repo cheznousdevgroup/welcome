@@ -252,6 +252,10 @@ input[type="checkbox"]{
         flex-direction: row;
         justify-content: space-around;
     }
+    .card{
+        display: flex;
+        justify-content: center;
+    }
     .card-content{
         transform: translateY(65%);
         transition: transform 500ms ease;
@@ -358,6 +362,9 @@ input[type="checkbox"]{
         flex-direction: row;
         justify-content: space-around;
     }
+    .card{
+        padding-left: 50px;
+    }
     .card-content{
         transform: translateY(65%);
         transition: transform 500ms ease;
@@ -410,6 +417,9 @@ input[type="checkbox"]{
         flex-direction: row;
         justify-content: space-around;
     }
+    .card{
+        padding-left: 50px;
+    }
     .card-content{
         transform: translateY(65%);
         transition: transform 500ms ease;
@@ -461,6 +471,9 @@ input[type="checkbox"]{
         display: block;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .card{
+        padding-left: 50px;
     }
     .card-content{
         transform: translateY(65%);
@@ -667,4 +680,44 @@ section {
     top: 0;
     z-index: -1;
     filter: brightness(30%);
+}
+
+/* services.html */
+.service1 {
+    border: 1px solid rgb(34, 3, 21);
+    border-radius: 10px;
+    margin: 15px 30px;
+    text-align: center;
+    background: yellow;
+}
+.service2 {
+    border: 1px solid rgb(34, 3, 21);
+    border-radius: 10px;
+    margin: 15px 30px;
+    text-align: center;
+    background: yellow;
+}
+.service3 {
+    border: 1px solid rgb(34, 3, 21);
+    border-radius: 10px;
+    margin: 15px 30px;
+    text-align: center;
+    background: yellow;
+}
+.foot h4 a{
+    border: 1px solid rgb(34, 3, 21);
+    border-radius: 15px;
+    padding: 5px;
+    background: rgb(3, 121, 255);
+    color: #fff;
+}
+.foot h4 a:hover {
+    color: rgb(201, 201, 201);
+}
+div h4 a {
+    text-decoration: none;
+}
+footer i{
+    font-size: 45px;
+    color: rgb(228, 36, 68);
 }
